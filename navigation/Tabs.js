@@ -24,7 +24,7 @@ const CustomTabFindButton = ({ children, onPress }) => {
           width: 60,
           height: 60,
           borderRadius: 30,
-          backgroundColor: 'crimson',
+          backgroundColor: '#181D2A',
         }}>
         {children}
       </View>
@@ -40,7 +40,10 @@ const Tabs = () => {
         style: {
           position: 'absolute',
           elevation: 0,
-          backgroundColor: '#ffffff',
+          marginHorizontal: 10,
+          bottom: 10,
+          borderRadius: 20,
+          backgroundColor: '#161D27',
           alignItems: 'center',
           justifyContent: 'center',
           height: 60,
@@ -61,9 +64,9 @@ const Tabs = () => {
                 name='home'
                 size={24}
                 color='black'
-                style={{ color: focused ? '#e32f45' : '#748c94' }}
+                style={{ color: focused ? '#BD7E53' : '#555763' }}
               />
-              <Text style={{ color: focused ? '#e32f45' : '#748c94' }}>
+              <Text style={{ color: focused ? '#BD7E53' : '#555763' }}>
                 Home
               </Text>
             </View>
@@ -84,10 +87,10 @@ const Tabs = () => {
                 name='chat'
                 size={24}
                 color='black'
-                style={{ color: focused ? '#e32f45' : '#748c94' }}
+                style={{ color: focused ? '#BD7E53' : '#555763' }}
               />
 
-              <Text style={{ color: focused ? '#e32f45' : '#748c94' }}>
+              <Text style={{ color: focused ? '#BD7E53' : '#555763' }}>
                 Chat
               </Text>
             </View>
@@ -99,7 +102,7 @@ const Tabs = () => {
         component={FindScreen}
         options={{
           tabBarIcon: ({ focused }) => (
-            <AntDesign name='search1' size={24} color='white' />
+            <AntDesign name='search1' size={24} color='#BD7E53' />
           ),
           tabBarButton: (props) => <CustomTabFindButton {...props} />,
         }}
@@ -118,10 +121,10 @@ const Tabs = () => {
                 name='setting'
                 size={24}
                 color='black'
-                style={{ color: focused ? '#e32f45' : '#748c94' }}
+                style={{ color: focused ? '#BD7E53' : '#555763' }}
               />
 
-              <Text style={{ color: focused ? '#e32f45' : '#748c94' }}>
+              <Text style={{ color: focused ? '#BD7E53' : '#555763' }}>
                 Settings
               </Text>
             </View>
@@ -142,10 +145,10 @@ const Tabs = () => {
                 name='database'
                 size={24}
                 color='black'
-                style={{ color: focused ? '#e32f45' : '#748c94' }}
+               style={{ color: focused ? '#BD7E53' : '#555763' }}
               />
 
-              <Text style={{ color: focused ? '#e32f45' : '#748c94' }}>
+              <Text style={{ color: focused ? '#BD7E53' : '#555763' }}>
                 Posts
               </Text>
             </View>
